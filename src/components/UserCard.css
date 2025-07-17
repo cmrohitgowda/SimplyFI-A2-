@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul.ant-card-actions {
+    background-color: #f5f5f5 !important;;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+}
