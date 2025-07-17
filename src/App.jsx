@@ -28,6 +28,11 @@ export default function App() {
         : [...prev, user.id]
     );
   };
+  const handleDelete = (userToDelete) => {
+    setUsers((prevUsers) =>
+      prevUsers.filter((user) => user.id !== userToDelete.id)
+    );
+  };
 
   return (
     <>
@@ -45,7 +50,7 @@ export default function App() {
               user={user}
               onEdit={() => setEditingUser(user)}
               isLiked={likedUsers.includes(user.id)}
-              onDelete={(u) => console.log("Delete", u)}
+              onDelete={handleDelete}
               onLike={handleLike}
             />
           </Col>

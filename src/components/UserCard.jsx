@@ -62,7 +62,7 @@ export default function UserCard({ user, onEdit, onDelete, onLike, isLiked }) {
           style={{ fontSize: "20px" }}
         />,
         <DeleteFilled
-          key="delete"
+          key={user.id}
           onClick={() => onDelete(user)}
           style={{ fontSize: "20px" }}
         />,
