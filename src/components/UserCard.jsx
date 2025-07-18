@@ -19,7 +19,9 @@ export default function UserCard({ user, onEdit, onDelete, onLike, isLiked }) {
       className="custom-user-card"
       style={{
         width: "100%",
-        minHeight: "100%",
+        height: "100%",
+        border: "1px solid #e8e8e8",
+        borderRadius: "0px",
       }}
       cover={
         <div
@@ -28,6 +30,10 @@ export default function UserCard({ user, onEdit, onDelete, onLike, isLiked }) {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
+            borderTop: "1px solid #e8e8e8",
+            borderLeft: "1px solid ##e8e8e8",
+            borderRight: "1px solid #e8e8e8",
+            borderRadius: "0px",
           }}
         >
           <img
@@ -36,10 +42,6 @@ export default function UserCard({ user, onEdit, onDelete, onLike, isLiked }) {
             style={{
               maxWidth: "50%",
               maxHeight: "50%",
-              display: "flex",
-              flexWrap: "wrap",
-              alignItems: "space-evenly",
-              justifyContent: "space-evenly",
             }}
           />
         </div>

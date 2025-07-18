@@ -1,6 +1,5 @@
 .custom-user-card .ant-card-actions {
-    margin-top: auto;
     background-color: #fafafa!important;
-    border-top: 1px solid #f0f0f0;
+    border-radius: "0px"
 }
 
