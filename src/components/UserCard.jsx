@@ -12,7 +12,7 @@ const { Meta } = Card;
 import "./UserCard.css";
 
 export default function UserCard({ user, onEdit, onDelete, onLike, isLiked }) {
-  const avatarUrl = `https://avatars.dicebear.com/v2/avataaars/${user.username}.svg?options[mood][]=happy`;
+  const avatarUrl = `https://api.dicebear.com/7.x/avataaars/svg?seed=${username}`;
 
   return (
     <Card
