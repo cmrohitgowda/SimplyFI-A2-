@@ -11,8 +11,10 @@ export default function App() {
   const [likedUsers, setLikedUsers] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  const URL = "https://jsonplaceholder.typicode.com/users";
+
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/users")
+    fetch(URL)
       .then((res) => res.json())
       .then((data) => {
         setUsers(data);
