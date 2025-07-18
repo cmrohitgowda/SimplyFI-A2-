@@ -9,15 +9,17 @@ import {
 } from "@ant-design/icons";
 import { Card } from "antd";
 const { Meta } = Card;
+import "./UserCard.css";
 
 export default function UserCard({ user, onEdit, onDelete, onLike, isLiked }) {
   const avatarUrl = `https://avatars.dicebear.com/v2/avataaars/${user.username}.svg?options[mood][]=happy`;
 
   return (
     <Card
+      className="custom-user-card"
       style={{
         width: "100%",
-        height: "425px",
+        minHeight: "100%",
       }}
       cover={
         <div
